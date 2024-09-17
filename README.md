@@ -1,5 +1,5 @@
 
-# detalles a tener en cuenta 
+# Detalles a tener en cuenta 
 * se uso el patron Repository Pattern con Spring Data Reactive para el acceso a la bd postgres.
 * se uso el patron CQRS para separar las querys de lectura de las de escritura.
 * se uso web client para la peticion externa para de esta manera seguir el flujo reactivo y no bloqueante.
