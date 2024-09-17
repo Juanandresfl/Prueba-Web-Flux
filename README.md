@@ -1,6 +1,15 @@
-Se implemento clean architecture, usando una herramienta de codigo libre como es el 
-scaffold desarrollado por bancolombia que permite implementar esta arquitectura de
-manera mas sencilla.
+
+# detalles a tener en cuenta 
+* se uso el patron Repository Pattern con Spring Data Reactive para el acceso a la bd postgres.
+* se uso el patron CQRS para separar las querys de lectura de las de escritura.
+* se uso web client para la peticion externa para de esta manera seguir el flujo reactivo y no bloqueante.
+* se uso Mono.cache asignandole un valor configurable de expiracion al listado de status.
+* se realizaron algunos test unitarios a los usecase usando Junit, mockito y stepVerifier
+* Se implemento clean architecture, usando una herramienta de codigo libre como es el
+  scaffold desarrollado por bancolombia que permite implementar esta arquitectura de
+  manera mas sencilla.
+* se documento el api usando swagger y openApi
+
 
 # Proyecto Base Implementando Clean Architecture
 

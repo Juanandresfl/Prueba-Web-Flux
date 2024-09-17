@@ -14,7 +14,7 @@ import reactor.core.publisher.Mono;
 public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
-    private final ProductMapper mapper;
+    private final ProductMapper mapper = ProductMapper.INSTANCE;
 
 
     @Override

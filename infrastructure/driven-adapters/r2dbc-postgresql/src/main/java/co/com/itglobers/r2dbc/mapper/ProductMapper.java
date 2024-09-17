@@ -8,6 +8,9 @@ import org.mapstruct.factory.Mappers;
 
 @Mapper
 public interface ProductMapper {
+
+    ProductMapper INSTANCE = Mappers.getMapper(ProductMapper.class);
+
     ProductResponse toModel(ProductEntity productEntity);
 
     ProductEntity toEntity(ProductRequest product);
