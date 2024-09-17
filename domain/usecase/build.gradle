@@ -1,0 +1,7 @@
+dependencies {
+    implementation project(':model')
+}
+
+tasks.withType(Test){
+    useJUnitPlatform()
+}
